@@ -1,0 +1,13 @@
+diff --git a/Makefile b/Makefile
+index 6237428..8ad738d 100644
+--- a/Makefile
++++ b/Makefile
+@@ -34,7 +34,7 @@ COWPATCH = $(CURDIR)/cowpatch.sh
+ 
+ HOST = $(if $(NATIVE),$(TARGET))
+ BUILD_DIR = build/$(if $(HOST),$(HOST),local)/$(TARGET)
+-OUTPUT = $(CURDIR)/output$(if $(HOST),-$(HOST))
++OUTPUT = $(CURDIR)/output$(if $(HOST),-$(HOST))/$(TARGET)
+ 
+ REL_TOP = ../../..
+ 

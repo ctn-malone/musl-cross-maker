@@ -1,0 +1,10 @@
+musl_cross_make_repository="https://git.zv.io/toolchains/musl-cross-make"
+musl_cross_make_default_commit_id="53280e53a32202a0ee874911fc52005874db344b"
+
+# mapping arch => musl-cross-make target
+declare -A arch_target_mapping=(
+    ["x86_64"]="x86_64-linux-musl"
+    ["i686"]="i686-linux-musl"
+    ["armv7l"]="armv7l-linux-musleabihf"
+    ["aarch64"]="aarch64-linux-musl"
+)
